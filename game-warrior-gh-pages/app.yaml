@@ -19,27 +19,7 @@ handlers:
   - url: /fonts
     static_dir: fonts
 
-  # Serve index.html as the Home page
+  # Serve index.html as the main page
   - url: /.*
     static_files: index.html
     upload: index.html
-
-  # Serve community.html as the Forums page
-  - url: /.*
-    static_files: community.html
-    upload: community.html
-
-  # Serve review.html as the Games page
-  - url: /.*
-    static_files: review.html
-    upload: review.html
-
-  # Serve contact.html as the Contact page
-  - url: /.*
-    static_files: contact.html
-    upload: contact.html
-
-  # Serve categories.html as the Blog page
-  - url: /.*
-    static_files: categories.html
-    upload: categories.html
