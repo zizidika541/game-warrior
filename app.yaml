@@ -1,0 +1,45 @@
+runtime: python39
+
+handlers:
+  - url: /css
+    static_dir: css
+
+  - url: /js
+    static_dir: js
+
+  - url: /img
+    static_dir: img
+
+  - url: /icon-fonts
+    static_dir: icon-fonts
+
+  - url: /sass
+    static_dir: sass
+
+  - url: /fonts
+    static_dir: fonts
+
+  # Serve index.html as the home page
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+
+  # Serve community.html as the forums page
+  - url: /.*
+    static_files: community.html
+    upload: community.html
+
+  # Serve review.html as the games page
+  - url: /.*
+    static_files: review.html
+    upload: review.html
+
+  # Serve contact.html as the contact page
+  - url: /.*
+    static_files: contact.html
+    upload: contact.html
+
+  # Serve categories.html as the blog page
+  - url: /.*
+    static_files: categories.html
+    upload: categories.html
