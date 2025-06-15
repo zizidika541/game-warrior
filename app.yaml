@@ -23,27 +23,3 @@ handlers:
   - url: /.*
     static_files: index.html
     upload: index.html
-
-  # Serve community.html as the Forums page
-  - url: .*/community
-    static_files: community.html
-    upload: community.html
-
-  # Serve review.html as the Games page
-  - url: .*/review
-    static_files: review.html
-    upload: review.html
-
-  # Serve contact.html as the Contact page
-  - url: .*/contact
-    static_files: contact.html
-    upload: contact.html
-
-  # Serve categories.html as the Blog page
-  - url: .*/categories
-    static_files: categories.html
-    upload: categories.html
-
-  - url: /(.*)
-    static_files: \1
-    upload: (.*)
